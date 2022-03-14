@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refraction Demo</title>
+
+    <!-- Basic imports -->
+    <link href="src/stylesheets/style.css" rel="stylesheet">
+    <script src="src/scripts/jquery.min.js"></script>
+    <script src="src/scripts/welcomeIntro.js"></script>
+
+    <!-- Physics script -->
+    <script src="src/scripts/physics.js"></script>
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <div class="welcome-overlay">
+        <div class="intro" style="display: none;">
+            <h1>Welcome!</h1>
+        </div>
+        <div class="warning" style="display: none;">
+            <h1>This isn't made for phones, ipads, or literally anything but a laptop. Sorry! :)</h1>
+        </div>
+        <div class="info" style="display: none;">
+            <h1>Your task is to change the index of refraction to hit the target!</h1>
+        </div>
+    </div>
+
+    <div class="site-container">
+        <div class="center-rotation">
+            <div class="backing">
+                &nbsp;
+            </div>
+            <div class="light-beam light-beam-middle rotatable">
+                &nbsp;
+            </div>
+            <div class="glass-overlay">
+                &nbsp;
+            </div>
+        </div>
+        <div class="light-beam light-beam-left">
+            &nbsp;
+        </div>
+        <div class="light-beam light-beam-right">
+            &nbsp;
+        </div>
+
+        <div class="slider floating">
+            <input type="range" min="-100" max="100">
+        </div>
+    </div>
+
+</body>
+
+</html>

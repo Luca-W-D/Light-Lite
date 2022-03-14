@@ -1,0 +1,110 @@
+/* Core styling */
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #DEDEDE;
+}
+
+.site-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #232425;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    color: gray;
+}
+
+.welcome-overlay > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    min-width: 70%;
+}
+
+/* Specific styling */
+
+.center-rotation {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 35px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.center-rotation > * {
+    position: absolute;
+}
+
+.center-rotation .backing {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 3;
+}
+
+.center-rotation .light-beam {
+    height: 5px;
+    width: 300%;
+    background-color: white;
+    z-index: 3;
+    top: 202.5px;
+    left: 0%;
+    transform: translateX(-50%) translateY(-50%) rotate(0);
+}
+
+.center-rotation .glass-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.5);
+    z-index: 5;
+    backdrop-filter: blur(2.5px);
+}
+
+.light-beam {
+    position: absolute;
+    background-color: white;
+    height: 5px;
+}
+
+.light-beam-left {
+    width: 50%;
+    left: 0;
+    top: 50%;
+}
+
+.light-beam-right {
+    width: 50%;
+    right: 0;
+    top: 50%;
+}
+
+.slider {
+    padding: 30px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.floating {
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px, rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px, rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
+    border-radius: 14px;
+}
