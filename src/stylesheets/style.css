@@ -120,3 +120,31 @@ body, html {
     box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px, rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px, rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
     border-radius: 14px;
 }
+
+.light-beam.target {
+    background: none;
+}
+
+#target {
+    position: absolute;
+    right: 0;
+    background-color: #F00;
+    padding: 10px;
+    height: 0;
+    width: 0;
+    top: 50%;
+    border-radius: 14px;
+    transform: translateY(-50%);
+}
+
+#warn-container {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 225px;
+    padding: 5px 30px;
+    text-align: center;
+    background-color: #FF817E;
+}
