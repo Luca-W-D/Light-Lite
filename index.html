@@ -36,6 +36,7 @@
     </div>
 
     <div class="site-container">
+        <div style="float: right">Refractive index: <span id="refractive-index">1.33</span></div>
         <div class="center-rotation">
             <div class="backing">
                 &nbsp;
@@ -54,8 +55,21 @@
             &nbsp;
         </div>
 
-        <div class="slider floating">
-            <input type="range" min="-100" max="100">
+        <div class="slider floating" id="">
+            <input type="range" min="-60" max="60">
+        </div>
+
+        <div class="object floating">
+            <input type="radio" name="object-permitivity" value="1.33" checked>
+            <label for="object-permitivity">Water</label><br />
+            <input type="radio" name="object-permitivity" value="1.50">
+            <label for="object-permitivity">Glass</label><br />
+            <input type="radio" name="object-permitivity" value="2.42">
+            <label for="object-permitivity">Diamond</label><br />
+            <input type="radio" name="object-permitivity" value="3.50">
+            <label for="object-permitivity">Silicon</label><br />
+            <input type="radio" name="object-permitivity" value="4.10">
+            <label for="object-permitivity">Germanium</label><br />
         </div>
     </div>
 
